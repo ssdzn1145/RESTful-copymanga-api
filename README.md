@@ -84,3 +84,6 @@ python cloud-functions/index.py        # http://localhost:8000
 ## 许可证
 
 MIT License
+# 三平台部署更新
+
+章节 UUID 图片、共享缓存、限流与三平台入口见 [部署说明](docs/DEPLOYMENT.md)。
