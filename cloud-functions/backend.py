@@ -633,8 +633,9 @@ def resolve_chapter(path_word, chapter_number, cookie):
 
 
 @app.get("/")
+@app.get("/health")
 def read_root():
-    return "it works!"
+    return jsonify(status="ok", source="CopyManga")
 
 
 @app.get("/config")
@@ -650,6 +651,7 @@ def config():
                 "photoPath": "/photo/<id>/chapter/<chapter>",
                 "searchPath": "/search/<text>/<page>",
                 "type": "copymanga",
+                "idType": "slug",
             }
         }
     )
